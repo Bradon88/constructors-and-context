@@ -17,7 +17,12 @@
   getUsername --> which is a function that returns the current object's username property. *Don't use 'user' instead use the 'this' keyword*
 */
 
-//Code Here
+const user = {
+  this.username = username
+  this.email = email
+  this.getUsername = getUsername
+}
+return this.username
 
 ////////// PROBLEM 2 //////////
 
@@ -34,10 +39,10 @@ function Animal(name, species, food) {
     return (
       this.name + ' is a ' + this.species + ' and likes to eat ' + this.food
     )
-  }
+  } 
 }
+const animal1 = new Animal('jimmy', 'tiger', 'meat')
 
-//Code Here
 
 ////////// PROBLEM 3 //////////
 
@@ -55,7 +60,7 @@ let who = {
   location: 'Belize',
 }
 
-//Code Here
+const whoSaysHi = sayHi.bind()
 
 ////////// PROBLEM 4 //////////
 
